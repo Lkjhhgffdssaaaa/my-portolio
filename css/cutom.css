@@ -21,6 +21,8 @@ letter spacing, font-size etc.*/
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 20px 10px;
+    font-size: 18px;
+    font-weight: 300;
 }
 .skill-cont .skill{
     display: flex;
@@ -46,12 +48,16 @@ letter spacing, font-size etc.*/
         align-items: center;
         row-gap: 40px;
     }
+    .skill-cont .skill{
+        width: 200px;
+    }
     
 }
 
 .skill-cont .skill img{
     /* width: 150px; */
     height: 100px;
+    margin-bottom: 10px;
 }
 
 
