@@ -20,7 +20,7 @@ letter spacing, font-size etc.*/
 .skill-cont{
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 15px;
+    gap: 20px 10px;
 }
 .skill-cont .skill{
     display: flex;
@@ -28,15 +28,25 @@ letter spacing, font-size etc.*/
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    /* border: 1px solid #000; */
     background-color: #fff;
     width: 200px;
     padding: 10px;
-    transition: .5s ease;
 }
 
 .skill-cont .skill:hover{
     box-shadow: 0 0 4px 0 #383838;
+    transition: .5s ease-out;
+}
+
+@media screen and (max-width: 900px) {
+    .skill-cont{
+        margin-left: 20px;
+        grid-template-columns: auto auto;
+        width: 100%;
+        align-items: center;
+        row-gap: 40px;
+    }
+    
 }
 
 .skill-cont .skill img{
