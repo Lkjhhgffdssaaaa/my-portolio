@@ -31,7 +31,7 @@ letter spacing, font-size etc.*/
     align-items: center;
     border-radius: 5px;
     background-color: #fff;
-    width: 100px;
+    width: 200px;
     padding: 10px;
 }
 
@@ -50,8 +50,21 @@ letter spacing, font-size etc.*/
     }
     .skill-cont .skill{
         width: 200px;
+    } 
+}
+
+@media screen and (max-width: 500px){
+    .skill-cont{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-left: -5px;
     }
-    
+    .skill-cont .skill{
+        width: 200px;
+    } 
 }
 
 .skill-cont .skill img{
